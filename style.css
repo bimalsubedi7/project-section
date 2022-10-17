@@ -1,0 +1,45 @@
+.portfolio-card{
+    width: 33%;
+}
+
+.card-img{
+    position: relative;
+    height: 380px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-img img{
+    position: absolute;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.6);
+    transition: ease-in-out 600ms;
+}
+
+.card-img img:nth-child(2){
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.card-img img:nth-child(1){
+    margin-left: 60px;
+    margin-bottom: 60px;
+}
+
+.card-img:hover img{
+    transform: scale(0.55);
+}
+
+.card-img:hover .img-left{
+    transform-origin: center left;
+}
+
+.card-img:hover .img-mid{
+    transform-origin: center top;
+}
+
+.card-img:hover .img-right{
+    margin: 0;
+    transform-origin: center right;
+}
