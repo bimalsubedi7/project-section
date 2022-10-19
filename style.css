@@ -3,15 +3,17 @@
 }
 
 .card-img {
+  width: 100%;
+  padding: 40px;
   position: relative;
-  height: 380px;
+  height: 350px;
   display: flex;
   align-items: flex-end;
 }
 
 .card-img img {
   position: absolute;
-  width: 280px;
+  width: 60%;
   border-radius: 10px;
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.6);
   transition: ease-in-out 600ms;
@@ -44,6 +46,12 @@
   transform-origin: center right;
 }
 
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .portfolio-card button {
   padding: 10px 20px;
   border-radius: 10px;
@@ -69,6 +77,13 @@
 }
 
 .git:hover {
-    background-color: rgb(15, 176, 101);;
-    color: #fff;
+  background-color: rgb(15, 176, 101);
+  color: #fff;
+}
+
+.portfolio-card h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 32px;
+  color: #222;
 }
